@@ -18,10 +18,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: appBar(),
       body: Column(
-        children: [
-          const AppBarPlusWidget(), 
-          listViewMethod()
-        ],
+        children: [const AppBarPlusWidget(), listViewMethod()],
       ),
       floatingActionButton: floatingButtonMethod(context),
     );
@@ -77,8 +74,18 @@ class _HomePageState extends State<HomePage> {
         child: IconButton(
             onPressed: () {
               Navigator.of(context)
-                  .push(MaterialPageRoute(
-                      builder: (_) => AddNewContactPage(contactData: contact)))
+                  .push(PageRouteBuilder(
+                pageBuilder: (context, animation, secondaryAnimation) {
+                  return AddNewContactPage(contactData: contact);
+                },
+                transitionsBuilder:
+                    (context, animation, secondaryAnimation, child) {
+                  final tween =
+                      Tween(begin: 0.0, end: 1.0);
+                  return ScaleTransition(
+                      scale: animation.drive(tween), child: child);
+                },
+              ))
                   .then((updatedData) {
                 setState(() {
                   contact = updatedData;
