@@ -1,16 +1,13 @@
-# flutter_contact_app
+# Flutter Contact Application
+This is a task for my flutter development bootcamp.
 
-A new Flutter project.
+Subject 1: flutter_week4_form (development/v1).
 
-## Getting Started
+Subject 2: flutter_week5_navigation (development/v1).
 
-This project is a starting point for a Flutter application.
+## About Branch
+- **master**: The first branch in application development.
+- **development/v1**: Development of the homepage and add new contact page.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Output Application
+<img src="https://github.com/achmadfaizalawi/flutter_contact_app/blob/development/v1/assets/output_screenshots/home_page.png?raw=true" width="400" height="800"/> <img src="https://github.com/achmadfaizalawi/flutter_contact_app/blob/development/v1/assets/output_screenshots/add_contact_page.png?raw=true" width="400" height="800"/> 
